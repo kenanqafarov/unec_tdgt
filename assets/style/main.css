@@ -1,0 +1,79 @@
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  font-family: "Poppins", sans-serif;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  height: 84px;
+  justify-content: space-around;
+  box-shadow: 2px -80px 200px black;
+  > .logo {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    > img {
+      height: 64px;
+    }
+    > p {
+      font-size: 22px;
+      font-weight: 600;
+    }
+  }
+  > .navlinks {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    > a {
+      font-weight: 500;
+      color: black;
+    }
+    > .active {
+      color: #037bfc;
+    }
+  }
+  > .navbuttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    > .login-btn {
+      color: black;
+      background-color: none;
+      font-weight: 500;
+      border: 1px solid #2a282825;
+      border-radius: 10px;
+      padding: 10px 20px;
+    }
+    > .signup-btn {
+      color: rgb(255, 255, 255);
+      background-color: #037bfc;
+      font-weight: 500;
+      border: 1px solid #2a282825;
+      border-radius: 10px;
+      padding: 10px 20px;
+    }
+    > .lang-btn {
+      padding: 10px 10px;
+      background: none;
+      font-weight: 600;
+      font-size: 18px;
+      border-radius: 10px;
+      border: 1px solid #2a282825;
+      transition: 0.6s ease;
+    }
+    > .lang-btn:hover {
+      cursor: pointer;
+      background-color: #037bfc;
+      color: white;
+    }
+  }
+}
