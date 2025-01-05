@@ -11,6 +11,7 @@
 
 header {
   display: flex;
+  width: 100%;
   align-items: center;
   height: 84px;
   justify-content: space-around;
@@ -33,11 +34,41 @@ header {
     align-items: center;
     gap: 25px;
     > a {
+      position: relative;
       font-weight: 500;
       color: black;
+      transition: 0.3s ease;
     }
     > .active {
       color: #037bfc;
+    }
+    > .active::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: -2px;
+      width: 0;
+      width: 100%;
+      height: 2px;
+      background-color: #037bfc;
+      transition: width 0.3s ease;
+    }
+
+    > a:hover {
+      color: #037bfc;
+    }
+    > a::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: -2px;
+      width: 0;
+      height: 2px;
+      background-color: #037bfc;
+      transition: width 0.3s ease;
+    }
+    > a:hover::after {
+      width: 100%;
     }
   }
   > .navbuttons {
@@ -74,6 +105,21 @@ header {
       cursor: pointer;
       background-color: #037bfc;
       color: white;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  header {
+    width: 100%;
+
+    > .navlinks {
+      display: none;
+    }
+    > .navbuttons {
+      > .signup-btn {
+        display: none;
+      }
     }
   }
 }
