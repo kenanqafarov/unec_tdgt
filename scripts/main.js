@@ -16,3 +16,21 @@ function langer() {
         document.getElementById("pages").innerHTML = "Əlaqə";
     }
 }
+
+const sidebar = () => {
+    const sidebarIcon = document.getElementById("menu");
+    const sidebar = document.getElementById("sidebar");
+    sidebar.classList.toggle("sidebarActive")
+    if (sidebarIcon.classList.contains("bars")) {
+        sidebar.classList.add("sidebar")
+        sidebarIcon.classList.remove("bars");
+        sidebarIcon.classList.add("x")
+
+
+    } else {
+        sidebarIcon.classList.remove("x");
+        sidebarIcon.classList.add("bars")
+
+
+    }
+}
