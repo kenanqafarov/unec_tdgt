@@ -14,7 +14,9 @@ header {
   width: 100%;
   align-items: center;
   height: 84px;
+  position: relative;
   justify-content: space-around;
+  z-index: 99;
   background-color: white;
   box-shadow: 2px -80px 200px black;
   > .logo {
@@ -169,6 +171,7 @@ header {
 
 .sidebarActive {
   top: 80px;
+  z-index: 90;
 }
 
 main {
