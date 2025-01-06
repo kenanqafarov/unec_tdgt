@@ -293,6 +293,8 @@ main {
     }
 
     > .navbuttons {
+      display: flex;
+      gap: 20px;
       > .bars {
         display: block;
         display: block;
@@ -300,8 +302,8 @@ main {
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        margin-left: 2px;
         gap: 3px;
-        margin-left: 10px;
         > .line1 {
           height: 3px;
           width: 23px;
@@ -330,7 +332,8 @@ main {
         align-items: center;
         justify-content: center;
         gap: 3px;
-        margin-left: 10px;
+        margin-left: 2px;
+
         > .line1 {
           position: absolute;
           height: 3px;
