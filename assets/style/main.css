@@ -171,6 +171,198 @@ header {
   top: 80px;
 }
 
+footer {
+  margin-top: 100px;
+  height: 620px;
+  background: linear-gradient(to right, #1e36a0 1%, #1e36a0);
+  > .topPart {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+    padding-top: 90px;
+    > .leftPart {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      > img {
+        height: 110px;
+      }
+      > p {
+        color: white;
+        font-size: 1.2rem;
+        font-weight: 600;
+      }
+    }
+    > .rightPart {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
+      > .mail {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+
+        > a {
+          color: white;
+        }
+        > i {
+          padding: 10px;
+          color: white;
+          background-color: #2643b7;
+          border-radius: 10px;
+          font-size: 14px;
+        }
+      }
+      > .tel {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+
+        > a {
+          color: white;
+        }
+        > i {
+          padding: 10px;
+          color: white;
+          background-color: #2643b7;
+          border-radius: 10px;
+          font-size: 14px;
+        }
+      }
+    }
+  }
+  > .verticalBar {
+    height: 0.5px;
+    width: 90%;
+    border-radius: 5px;
+    background-color: #0117644d;
+    margin: 30px auto;
+  }
+  > .centerPart {
+    margin-top: 60px;
+    margin-bottom: 60px;
+    display: flex;
+    justify-content: center;
+    gap: 120px;
+    > .leftPart {
+      display: flex;
+      flex-direction: column;
+      gap: 60px;
+      > p {
+        line-height: 32px;
+        font-size: 27px;
+        font-weight: 500;
+        color: white;
+        > span {
+          color: #2383e9;
+          text-shadow: 1px 2px 50px white;
+        }
+      }
+      > form {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        > input {
+          border: none;
+          outline: none;
+          width: 290px;
+          height: 35px;
+          border-radius: 7px;
+          padding-left: 10px;
+          background-color: #2d408b;
+          color: white;
+          font-size: 12px;
+        }
+        > button {
+          padding: 8px 15px;
+          border-radius: 10px;
+          border: none;
+          outline: none;
+          background-color: #037bfc;
+          color: white;
+          font-weight: 500;
+        }
+        > button:hover {
+          cursor: pointer;
+        }
+      }
+    }
+    > .rightPart {
+      > .navlinks {
+        display: flex;
+        justify-content: center;
+        gap: 40px;
+        > .column {
+          display: flex;
+          flex-direction: column;
+          > p {
+            color: white;
+            font-weight: 600;
+            font-size: 18px;
+            margin-bottom: 20px;
+          }
+          > a {
+            color: white;
+            font-weight: 300;
+            transition: 0.3s ease;
+            font-size: 18px;
+          }
+          > a:hover {
+            color: #037bfc;
+            text-shadow: 10px 10px 10px #037bfc;
+          }
+        }
+      }
+    }
+  }
+  > .author {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 380px;
+    > .leftPart {
+      > p {
+        color: white;
+        > a {
+          color: #037bfc;
+          position: relative;
+          transition: 0.6s ease;
+        }
+        > a:hover::after {
+          width: 100%;
+        }
+        > a::after {
+          position: absolute;
+          content: "";
+          bottom: 0;
+          width: 0%;
+          left: 0;
+          background-color: #037bfc;
+          height: 1px;
+          transition: width 0.3s ease;
+        }
+      }
+    }
+    > .rightPart {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 5px;
+      > a {
+        color: white;
+        font-weight: 600;
+      }
+      > .centerBar {
+        width: 1px;
+        height: 20px;
+        background-color: #2383e9;
+      }
+    }
+  }
+}
+
 @media screen and (max-width: 768px) {
   header {
     width: 100%;
