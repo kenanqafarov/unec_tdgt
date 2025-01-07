@@ -780,9 +780,19 @@ footer {
         > p {
           text-align: center;
         }
+        >form{
+          display: flex;
+          justify-content: center;
+          >input{
+            width: 260px;
+          }
+        }
+        
       }
-      > .rightPart {
-        flex-direction: column;
+      >.rightPart{
+        justify-content: center;
+        align-items: center;
+        
       }
     }
     > .author {
