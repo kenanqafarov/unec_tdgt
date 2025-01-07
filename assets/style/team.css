@@ -476,7 +476,7 @@ footer {
       align-items: center;
       gap: 10px;
       > img {
-        height: 110px;
+        height: 80px;
       }
       > p {
         color: white;
@@ -757,8 +757,18 @@ footer {
   footer {
     height: 100%;
     > .topPart {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      >.leftPart{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
       >.rightPart{
         flex-direction: column;
+        align-items: center;
+      justify-content: center;
       }
     }
     > .centerPart {
