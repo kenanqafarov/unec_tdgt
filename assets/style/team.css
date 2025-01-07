@@ -755,11 +755,11 @@ footer {
     }
   }
   footer {
-    width: 100%;
     height: 100%;
     > .topPart {
-      display: flex;
-      flex-direction: column;
+      >.rightPart{
+        flex-direction: column;
+      }
     }
     > .centerPart {
       display: flex;
