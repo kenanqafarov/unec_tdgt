@@ -776,7 +776,7 @@ footer {
       }
     }
     > .author {
-      gap: 120px;
+      gap: 70px;
       > .leftPart,
       .rightPart {
         > p {
