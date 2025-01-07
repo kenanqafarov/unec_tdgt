@@ -24,9 +24,10 @@ header {
     > img {
       height: 64px;
     }
-    > p {
+    > a {
       font-size: 22px;
       font-weight: 600;
+      color: black;
     }
   }
   > .navlinks {
