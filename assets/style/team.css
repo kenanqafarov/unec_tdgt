@@ -790,8 +790,7 @@ footer {
         
       }
       >.rightPart{
-        justify-content: center;
-        align-items: center;
+        margin-left: 20px;
         
       }
     }
@@ -800,11 +799,12 @@ footer {
       > .leftPart,
       .rightPart {
         > p {
-          font-size: 12px;
+          font-size: 10px;
+          width: 100%;
           margin-bottom: 20px;
         }
         > a {
-          font-size: 12px;
+          font-size: 10px;
           margin-bottom: 20px;
         }
         > .centerBar {
