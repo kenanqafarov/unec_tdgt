@@ -455,30 +455,28 @@ footer {
   main {
     > .intro {
       flex-direction: column;
-      text-align: center;
-      align-items: center;
-      justify-content: center;
       > .leftPart {
-        margin-left: 20px;
+        flex-direction: column;
+        align-items: center;
+        > .motto {
+          text-align: center;
+        }
         > .desc {
-          margin-left: 60px;
+          text-align: center;
+          margin: 60px auto;
+        }
+        > button {
+          display: flex;
+          justify-content: center;
         }
       }
       > .rightPart {
-        > .test1 {
-          width: 130px;
-          height: 270px;
-          margin-top: -80px;
-        }
-        > .test2 {
-          width: 130px;
-          height: 270px;
-          margin-top: -80px;
-        }
-        > .test3 {
-          width: 130px;
-          height: 270px;
-          margin-top: -80px;
+        display: flex;
+        justify-content: center;
+        > .test1,
+        .test2,
+        .test3 {
+          width: 200px;
         }
       }
     }
@@ -541,7 +539,4 @@ footer {
       }
     }
   }
-}
-
-@media screen and (max-width: 768px) {
 }
