@@ -155,6 +155,9 @@ main {
       align-items: center;
       justify-content: center;
       gap: 20px;
+      > .mobileVersionImage {
+        display: none;
+      }
       > .test1 {
         border-radius: 20px;
         width: 200px;
@@ -471,12 +474,18 @@ footer {
         }
       }
       > .rightPart {
-        display: flex;
-        justify-content: center;
         > .test1,
         .test2,
         .test3 {
-          width: 200px;
+          display: none;
+        }
+        > .mobileVersionImage {
+          display: flex;
+          justify-content: center;
+          > img {
+            width: 100%;
+            height: 200px;
+          }
         }
       }
     }
