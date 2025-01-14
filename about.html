@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="assets/style/main.css" />
+    <link rel="stylesheet" href="assets/style/about.css" />
     <link rel="icon" href="assets/images/logo.png" />
     <link
       rel="stylesheet"
@@ -12,6 +12,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <title>UNEC TDGT</title>
   </head>
   <body>
@@ -21,8 +22,8 @@
         <a href="/index.html">UNEC TDGT</a>
       </div>
       <div class="navlinks">
-        <a href="/index.html" class="active" id="home">Home</a>
-        <a href="/about.html" id="about">About Us</a>
+        <a href="/index.html" id="home">Home</a>
+        <a href="/about.html" id="about" class="active">About Us</a>
         <a href="/events.html" id="feature">Projects</a>
         <a href="/team.html" id="pricing">Team</a>
         <a href="/contact.html" id="pages">Contact</a>
@@ -38,15 +39,32 @@
         </div>
       </div>
     </header>
-    <div class="sidebar" id="sidebar">
-      <a href="#" class="active" id="home">Home</a>
-      <a href="#" id="about">About Us</a>
-      <a href="#" id="feature">Projects</a>
-      <a href="#" id="pricing">Team</a>
-      <a href="#" id="pages">Contact</a>
-    </div>
-    <main></main>
-
+    <main>
+      <section class="intro">
+        <div class="leftPart" data-aos="fade-right" data-aos-duration="1900">
+          <h1 class="motto">
+            Gəncliyin enerjisi,<br />
+            <span>#Türk</span> dünyasının gələcəyidir!🩵
+          </h1>
+          <p class="desc">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex dolor
+            accusamus rem dolorem facilis, ipsa aspernatur officiis doloribus!
+            Voluptate, nemo deleniti! Minus nesciunt maxime necessitatibus
+            blanditiis, at iste molestiae repellendus.<br /><br />Lorem ipsum
+            dolor sit amet consectetur adipisicing elit. Amet alias velit,
+            delectus illo mollitia excepturi accusantium, cumque sit esse non
+            odit possimus dolorem facere repellendus corrupti! Adipisci
+            assumenda recusandae beatae.
+          </p>
+          <button type="submit">Üzv ol!</button>
+        </div>
+        <div class="rightPart">
+          <div class="test1" data-aos="fade-up" data-aos-duration="1500"></div>
+          <div class="test2" data-aos="fade-up" data-aos-duration="1800"></div>
+          <div class="test3" data-aos="fade-up" data-aos-duration="2000"></div>
+        </div>
+      </section>
+    </main>
     <footer>
       <div class="topPart">
         <div class="leftPart">
@@ -119,5 +137,8 @@
       </div>
     </footer>
   </body>
-  <script src="scripts/main.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </html>
